@@ -8,7 +8,6 @@ app.listen(port, function () {
 });
 
 // db connection
-
 db
     .authenticate()
     .then(() => {
