@@ -1,0 +1,27 @@
+{
+  "name": "job_finder",
+  "version": "1.0.0",
+  "description": "Este sistema será um portal para procura e postagem de empregos",
+  "keywords": [
+    "dev",
+    "jobs",
+    "dev",
+    "opportunity"
+  ],
+  "license": "ISC",
+  "author": "Gabriel Cerbaro",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.1",
+    "nodemon": "^3.1.14",
+    "sequelize": "^6.37.8",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  }
+}
