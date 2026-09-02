@@ -1,0 +1,36 @@
+<div id="top-container" class="container-fluid">
+    <h1 id="main-title" class="text-center">Encontre a vaga ideal para você!</h1>
+    <p id="main-subtitle" class="text-center">Descubra oportunidades de emprego que combinam com suas habilidades e interesses.</p>
+    <form id="search-form" class="form-inline" action="/" method="GET">
+        <div class="form-group col-md-10">
+            <input type="text" class="form-control" id="job" name="job" placeholder="Digite o nome da vaga" value="{{query}}">
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </form>
+</div>
+<main>
+
+    <div id="jobs-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Vagas em destaque</h2>
+                <ul id="job-list" class="list-group">
+                    {{#each jobs}}
+                    <li class="list-group-item {{#if this.new_job}}new-job{{/if}}">
+                        <img src="/img/empresa.png" alt="Company">
+                        <p><strong>{{this.company}}</strong></p>
+                        <h2>{{this.title}}</h2>
+                        <p>R$ {{this.salary}}</p>
+                        {{#if this.new_job}}<span class="new-job-label">Nova Vaga</span>{{/if}}
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </li>
+                    {{else}}
+                    <li class="list-group-item text-center">Nenhuma vaga encontrada.</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>

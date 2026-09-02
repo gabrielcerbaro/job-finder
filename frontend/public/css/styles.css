@@ -41,7 +41,7 @@ nav {
     background-color: #F7f9fc;
     border-bottom: 4px solid #013068;
     margin-bottom: 30px;
-    background-image: url('../img/banner2.jpg');
+    background-image: url('../img/predios.jpg');
     background-position: 0 100px;
     background-size: cover;
     color: #fff;
@@ -133,7 +133,7 @@ nav {
     font-weight: bold;
     padding: 5px 10px;
     position: absolute;
-    right: 20px;
+    right: 200px;
     top: 40px;
     display: none;
 }

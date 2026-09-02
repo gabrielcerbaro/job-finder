@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const db = require('../db/connections')
+const db = require('../db/connections');
 
 const Job = db.define('job', {
     title: {
@@ -22,4 +22,4 @@ const Job = db.define('job', {
     }
 });
 
-module.exports = Job
+module.exports = Job;
